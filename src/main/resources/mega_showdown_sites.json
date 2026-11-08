@@ -1,0 +1,626 @@
+[
+  {
+    "name": "Archaeological Site",
+    "anchor": "cobblemon:gilded_chest",
+    "symbol": "A",
+    "color": 14,
+    "samples": [
+      {
+        "x": 0,
+        "y": 7,
+        "z": -2,
+        "block": "minecraft:spruce_slab"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "z": 3,
+        "block": "minecraft:ladder"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "z": 3,
+        "block": "minecraft:spruce_trapdoor"
+      },
+      {
+        "x": -1,
+        "y": 4,
+        "z": 3,
+        "block": "minecraft:rail"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 2,
+        "block": "minecraft:stripped_spruce_log"
+      },
+      {
+        "x": -3,
+        "y": 2,
+        "z": -1,
+        "block": "minecraft:tuff"
+      },
+      {
+        "x": -2,
+        "y": 3,
+        "z": 1,
+        "block": "minecraft:oak_log"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "z": 2,
+        "block": "minecraft:spruce_planks"
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "z": 0,
+        "block": "minecraft:spruce_slab"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "z": 3,
+        "block": "minecraft:ladder"
+      },
+      {
+        "x": -1,
+        "y": 5,
+        "z": -2,
+        "block": "minecraft:spruce_trapdoor"
+      },
+      {
+        "x": -3,
+        "y": 4,
+        "z": 3,
+        "block": "minecraft:rail"
+      },
+      {
+        "x": -2,
+        "y": 3,
+        "z": -2,
+        "block": "minecraft:stripped_spruce_log"
+      },
+      {
+        "x": -4,
+        "y": 2,
+        "z": -5,
+        "block": "minecraft:tuff"
+      },
+      {
+        "x": -1,
+        "y": 3,
+        "z": 2,
+        "block": "minecraft:oak_log"
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "z": 2,
+        "block": "minecraft:spruce_planks"
+      }
+    ]
+  },
+  {
+    "name": "Mega Site",
+    "anchor": "mega_showdown:mega_stone_crystal",
+    "symbol": "M",
+    "color": 13,
+    "samples": [
+      {
+        "x": 0,
+        "y": -1,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "z": 1,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "z": 2,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "z": -2,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "z": 2,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "z": 1,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 3,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": -3,
+        "y": 1,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "z": -2,
+        "block": "mega_showdown:mega_meteorid_block"
+      }
+    ]
+  },
+  {
+    "name": "Megaroid (Keystone)",
+    "anchor": "mega_showdown:keystone_ore",
+    "symbol": "K",
+    "color": 6,
+    "samples": [
+      {
+        "x": 5,
+        "y": -2,
+        "z": -2,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 5,
+        "y": -2,
+        "z": 2,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": -3,
+        "y": 3,
+        "z": -4,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "z": -5,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 3,
+        "y": -1,
+        "z": -5,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 5,
+        "y": -3,
+        "z": 1,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 6,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_block"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "z": 0,
+        "block": "mega_showdown:mega_meteorid_radiated_block"
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "z": -1,
+        "block": "mega_showdown:mega_meteorid_block"
+      }
+    ]
+  },
+  {
+    "name": "Observatory",
+    "anchor": "mega_showdown:pedestal",
+    "symbol": "O",
+    "color": 11,
+    "samples": [
+      {
+        "x": 1,
+        "y": -2,
+        "z": 0,
+        "block": "minecraft:calcite"
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "z": -8,
+        "block": "minecraft:cracked_deepslate_tiles"
+      },
+      {
+        "x": -1,
+        "y": -5,
+        "z": 0,
+        "block": "minecraft:spruce_slab"
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "z": -5,
+        "block": "minecraft:oxidized_copper_trapdoor"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "z": -10,
+        "block": "minecraft:oxidized_cut_copper_slab"
+      },
+      {
+        "x": -3,
+        "y": -12,
+        "z": -8,
+        "block": "minecraft:jukebox"
+      },
+      {
+        "x": -5,
+        "y": -11,
+        "z": -5,
+        "block": "cobblemon:monitor"
+      },
+      {
+        "x": -3,
+        "y": -11,
+        "z": 1,
+        "block": "cobblemon:display_case"
+      },
+      {
+        "x": -3,
+        "y": -4,
+        "z": -5,
+        "block": "cobblemon:healing_machine"
+      },
+      {
+        "x": 7,
+        "y": -8,
+        "z": -4,
+        "block": "minecraft:stripped_jungle_wood"
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "z": -9,
+        "block": "minecraft:stripped_jungle_log"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "z": -3,
+        "block": "minecraft:cyan_stained_glass"
+      },
+      {
+        "x": 0,
+        "y": -11,
+        "z": -10,
+        "block": "minecraft:oxidized_copper_door"
+      },
+      {
+        "x": -3,
+        "y": 0,
+        "z": -5,
+        "block": "cobblemon:pc"
+      },
+      {
+        "x": -5,
+        "y": -7,
+        "z": -2,
+        "block": "minecraft:cobweb"
+      },
+      {
+        "x": -1,
+        "y": -4,
+        "z": -1,
+        "block": "minecraft:cyan_candle"
+      }
+    ]
+  },
+  {
+    "name": "Observatory",
+    "anchor": "mega_showdown:pedestal",
+    "symbol": "O",
+    "color": 11,
+    "samples": [
+      {
+        "x": 0,
+        "y": -2,
+        "z": 0,
+        "block": "minecraft:calcite"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "z": -8,
+        "block": "minecraft:cracked_deepslate_tiles"
+      },
+      {
+        "x": 1,
+        "y": -5,
+        "z": 0,
+        "block": "minecraft:spruce_slab"
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "z": -5,
+        "block": "minecraft:oxidized_copper_trapdoor"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "z": -10,
+        "block": "minecraft:oxidized_cut_copper_slab"
+      },
+      {
+        "x": 3,
+        "y": -12,
+        "z": -8,
+        "block": "minecraft:jukebox"
+      },
+      {
+        "x": 5,
+        "y": -11,
+        "z": -5,
+        "block": "cobblemon:monitor"
+      },
+      {
+        "x": 3,
+        "y": -11,
+        "z": 1,
+        "block": "cobblemon:display_case"
+      },
+      {
+        "x": 3,
+        "y": -4,
+        "z": -5,
+        "block": "cobblemon:healing_machine"
+      },
+      {
+        "x": 6,
+        "y": -8,
+        "z": -4,
+        "block": "minecraft:stripped_jungle_wood"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "z": -9,
+        "block": "minecraft:stripped_jungle_log"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "z": -3,
+        "block": "minecraft:cyan_stained_glass"
+      },
+      {
+        "x": 0,
+        "y": -11,
+        "z": -10,
+        "block": "minecraft:oxidized_copper_door"
+      },
+      {
+        "x": -4,
+        "y": 0,
+        "z": -5,
+        "block": "cobblemon:pc"
+      },
+      {
+        "x": -6,
+        "y": -7,
+        "z": -2,
+        "block": "minecraft:cobweb"
+      },
+      {
+        "x": 1,
+        "y": -4,
+        "z": -1,
+        "block": "minecraft:cyan_candle"
+      }
+    ]
+  },
+  {
+    "name": "Wishing Weald",
+    "anchor": "mega_showdown:wishing_star_crystal",
+    "symbol": "W",
+    "color": 10,
+    "samples": [
+      {
+        "x": 4,
+        "y": 0,
+        "z": 3,
+        "block": "minecraft:polished_andesite"
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "z": 0,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "z": 5,
+        "block": "minecraft:polished_andesite"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": -2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "z": -6,
+        "block": "minecraft:polished_andesite"
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "z": 2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "z": -1,
+        "block": "minecraft:polished_andesite"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "z": -2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": -6,
+        "y": 0,
+        "z": -2,
+        "block": "minecraft:polished_andesite"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "z": 1,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "z": -2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "z": 2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "z": -2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "z": 2,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": -3,
+        "y": 0,
+        "z": 0,
+        "block": "minecraft:stone"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": -3,
+        "block": "minecraft:stone"
+      }
+    ]
+  }
+]

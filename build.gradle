@@ -1,0 +1,122 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content { includeGroup 'maven.modrinth' }
+    }
+}
+
+dependencies {
+    implementation 'maven.modrinth:jade:15.10.6+neoforge'
+}
+
+neoForge {
+    version = neo_version
+
+    runs {
+        client {
+            client()
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    from('src/main/templates')
+    def replaceProperties = [
+        mod_id: mod_id,
+        mod_name: mod_name,
+        mod_version: mod_version,
+        mod_license: mod_license,
+        loader_version_range: loader_version_range,
+        neo_version_range: neo_version_range,
+        minecraft_version_range: minecraft_version_range
+    ]
+    inputs.properties replaceProperties
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand replaceProperties
+    }
+}
+
+sourceSets {
+    verification {
+        compileClasspath = sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath = output + compileClasspath
+    }
+}
+
+tasks.register('verifyClickCycle', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.ClickCycleTest'
+}
+
+check.dependsOn verifyClickCycle
+
+tasks.register('verifyPlacementRotation', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.PlacementRotationTest'
+}
+
+check.dependsOn verifyPlacementRotation
+
+tasks.register('verifyScrambleWords', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.ScrambleWordsTest'
+}
+
+check.dependsOn verifyScrambleWords
+
+tasks.register('verifyReconnectSchedule', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.ReconnectScheduleTest'
+}
+
+check.dependsOn verifyReconnectSchedule
+
+tasks.register('verifyMegaSitePatterns', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.MegaSitePatternTest'
+}
+
+check.dependsOn verifyMegaSitePatterns
+
+tasks.register('verifyMiningFloor', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.MiningFloorTest'
+}
+
+check.dependsOn verifyMiningFloor
