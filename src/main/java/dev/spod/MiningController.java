@@ -36,11 +36,12 @@ final class MiningController {
                     } else {
                         ClickController.stop();
                         MiningFloor.reset();
+                        MiningTorches.reset();
                         world = mc.level;
                         warned = null;
                         select(mc, Tool.HAMMER, null);
                         context.getSource().sendSuccess(() -> Component.literal(
-                                "Mining enabled: automatic tools and 3x3 floor filling from hotbar stone blocks. Mine manually; /mining stop disables."), false);
+                                "Mining enabled: automatic tools, 3x3 floor filling, and offhand torch placement. Mine manually; /mining stop disables."), false);
                     }
                     return 1;
                 })
@@ -70,13 +71,17 @@ final class MiningController {
 
     static void onFloorTick(ClientTickEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
-        if (ready(mc)) MiningFloor.tick(mc);
+        if (ready(mc)) {
+            MiningFloor.tick(mc);
+            MiningTorches.tick(mc);
+        }
     }
 
     static void stop() {
         world = null;
         warned = null;
         MiningFloor.reset();
+        MiningTorches.reset();
     }
 
     private static boolean ready(Minecraft mc) {

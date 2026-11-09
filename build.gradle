@@ -120,3 +120,12 @@ tasks.register('verifyMiningFloor', JavaExec) {
 }
 
 check.dependsOn verifyMiningFloor
+
+tasks.register('verifyMiningTorches', JavaExec) {
+    group = 'verification'
+    dependsOn verificationClasses
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'dev.spod.MiningTorchesTest'
+}
+
+check.dependsOn verifyMiningTorches

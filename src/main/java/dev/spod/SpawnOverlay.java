@@ -56,7 +56,7 @@ public final class SpawnOverlay {
         }
     }
 
-    private static boolean isSpawnableSurface(ClientLevel world, BlockPos floor) {
+    static boolean isSpawnableSurface(ClientLevel world, BlockPos floor) {
         BlockPos feet = floor.above();
         if (floor.getY() < world.getMinBuildHeight() || feet.getY() + 1 >= world.getMaxBuildHeight()
                 || !world.hasChunkAt(floor)) {
