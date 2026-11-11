@@ -41,7 +41,7 @@ final class MiningController {
                         warned = null;
                         select(mc, Tool.HAMMER, null);
                         context.getSource().sendSuccess(() -> Component.literal(
-                                "Mining enabled: automatic tools, 3x3 floor filling, and offhand torch placement. Mine manually; /mining stop disables."), false);
+                                "Mining enabled: automatic tools, floor filling, offhand torches, and sword defense. Mine manually; /mining stop disables."), false);
                     }
                     return 1;
                 })
@@ -55,11 +55,17 @@ final class MiningController {
     static void onTick(ClientTickEvent.Pre event) {
         Minecraft mc = Minecraft.getInstance();
         if (world != null && (mc.level != world || mc.player == null || !mc.player.isAlive())) stop();
-        if (ready(mc)) selectTarget(mc);
+        if (ready(mc) && !MiningCombat.prepare(mc)) selectTarget(mc);
     }
 
     static void onInput(InputEvent.InteractionKeyMappingTriggered event) {
         Minecraft mc = Minecraft.getInstance();
+        if (event.isAttack() && ready(mc) && MiningCombat.ownsTool()) {
+            event.setCanceled(true);
+            event.setSwingHand(false);
+            mc.gameMode.stopDestroyBlock();
+            return;
+        }
         // NeoForge fires this before both initial and continuing block destruction.
         if (event.isAttack() && ready(mc) && mc.hitResult != null
                 && mc.hitResult.getType() == HitResult.Type.BLOCK && !selectTarget(mc)) {
@@ -72,12 +78,17 @@ final class MiningController {
     static void onFloorTick(ClientTickEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
         if (ready(mc)) {
+            if (MiningCombat.ownsTool()) {
+                MiningCombat.attack(mc);
+                return;
+            }
             MiningFloor.tick(mc);
             MiningTorches.tick(mc);
         }
     }
 
     static void stop() {
+        MiningCombat.stop(Minecraft.getInstance());
         world = null;
         warned = null;
         MiningFloor.reset();
